@@ -1,0 +1,238 @@
+:root {
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --white-color: #ffffff;
+  --dark-color: #2e2f42;
+  --light-color: #f4f4fd;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --text: #434455;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -150%;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+/* ===== ============ COMPONENTS ============ ===== */
+
+.logo-link {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: var(--dark-color);
+}
+.logo-link-primary {
+  color: var(--primary-brand);
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  /* color: var(--dark-color); */
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: var(--dark-color);
+}
+/* ===== ============ HEADER ============ ===== */
+.header {
+}
+.navigation {
+}
+
+.navigation-list {
+}
+.navigation-item {
+}
+.navigation-link {
+  font-weight: 500;
+
+  color: var(--dark-color);
+}
+.navigation-link:focus,
+.navigation-link:hover {
+  color: var(--pressed-state);
+}
+
+.adress-list {
+}
+.adress-item {
+}
+.adress-link {
+  font-style: normal;
+
+  color: var(--text);
+}
+.adress-item:focus,
+.adress-link:hover {
+  color: var(--pressed-state);
+}
+/* ===== ============ /HEADER ============ ===== */
+/* ===== ============ HERO ============ ===== */
+.hero-section {
+  background-color: var(--dark-color);
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.07;
+
+  color: var(--white-color);
+}
+.hero-button {
+  background-color: var(--primary-brand);
+  color: var(--white-color);
+}
+.hero-button:focus,
+.hero-button:hover {
+  background-color: var(--pressed-state);
+}
+/* ===== ============ /HERO ============ ===== */
+/* ===== ============ ADVANTAGE ============ ===== */
+.advantage-section {
+}
+.advantage-title {
+}
+.advantage-list {
+}
+.advantage-item {
+}
+.advantage-subtitle {
+}
+.advantage-text {
+  color: var(--text);
+}
+/* ===== ============ /ADVANTAGE ============ ===== */
+/* ===== ============ GALLERY ============ ===== */
+.gallery-section {
+}
+.gallery-title {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+/* ===== ============ /GALLERY ============ ===== */
+/* ===== ============ TEAM ============ ===== */
+.team-section {
+  background-color: var(--light-color);
+}
+.team-title {
+}
+.team-list {
+}
+.team-item {
+  background-color: var(--white-color);
+}
+.team-link {
+}
+.team-img {
+}
+.team-subtitle {
+}
+.team-text {
+  color: var(--text);
+}
+/* ===== ============ /TEAM ============ ===== */
+/* ===== ============ FOOTER ============ ===== */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer-logo-link {
+  color: var(--light-color);
+}
+.footer-text {
+  color: var(--light-color);
+}
+/* ===== ============ /FOOTER ============ ===== */
+/* ===== ============ PORTFOLIO ============ ===== */
+.portfolio-section {
+}
+
+.portfolio-btn-list {
+}
+.portfolio-btn-item {
+}
+.portfolio-button {
+  font-weight: 600;
+
+  background-color: var(--light-color);
+  color: var(--primary-brand);
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover {
+  background-color: var(--pressed-state);
+  color: var(--white-color);
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-link {
+}
+.portfolio-img {
+}
+.portfolio-subtitle {
+}
+.portfolio-text {
+  color: var(--text);
+}
+/* ===== ============ /PORTFOLIO ============ ===== */
