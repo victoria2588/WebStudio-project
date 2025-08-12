@@ -9,6 +9,29 @@
   --text: #434455;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: var(--primary-font);
   font-size: 16px;
@@ -47,6 +70,13 @@ body {
   white-space: nowrap;
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* ===== ============ COMPONENTS ============ ===== */
 
 .logo-link {
@@ -78,8 +108,6 @@ body {
   font-weight: 700;
   line-height: 1.11;
   text-transform: capitalize;
-
-  /* color: var(--dark-color); */
 }
 
 .subtitle {
@@ -91,11 +119,22 @@ body {
 }
 /* ===== ============ HEADER ============ ===== */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
 }
 .navigation {
+  display: flex;
+  gap: 76px;
+  align-items: center;
 }
 
 .navigation-list {
+  display: flex;
+  gap: 40px;
 }
 .navigation-item {
 }
@@ -110,6 +149,9 @@ body {
 }
 
 .adress-list {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
 }
 .adress-item {
 }
@@ -125,16 +167,24 @@ body {
 /* ===== ============ /HEADER ============ ===== */
 /* ===== ============ HERO ============ ===== */
 .hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background-color: var(--dark-color);
 }
 .hero-title {
   font-size: 56px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.07;
-
+  margin: 0 auto 48px;
+  /* max-width: 512px; */
+  width: 512px;
   color: var(--white-color);
 }
 .hero-button {
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background-color: var(--primary-brand);
   color: var(--white-color);
 }
@@ -145,14 +195,20 @@ body {
 /* ===== ============ /HERO ============ ===== */
 /* ===== ============ ADVANTAGE ============ ===== */
 .advantage-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .advantage-title {
 }
 .advantage-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 .advantage-item {
 }
 .advantage-subtitle {
+  margin-bottom: 8px;
 }
 .advantage-text {
   color: var(--text);
@@ -160,10 +216,15 @@ body {
 /* ===== ============ /ADVANTAGE ============ ===== */
 /* ===== ============ GALLERY ============ ===== */
 .gallery-section {
+  padding-bottom: 120px;
 }
 .gallery-title {
+  text-align: center;
+  margin-bottom: 72px;
 }
 .gallery-list {
+  display: flex;
+  gap: 24px;
 }
 .gallery-item {
 }
@@ -172,20 +233,34 @@ body {
 /* ===== ============ /GALLERY ============ ===== */
 /* ===== ============ TEAM ============ ===== */
 .team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--light-color);
 }
 .team-title {
+  text-align: center;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .team-item {
+  flex-basis: calc((100% - 72px) / 4);
   background-color: var(--white-color);
 }
 .team-link {
 }
 .team-img {
 }
+.team-item-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
 .team-subtitle {
+  margin-bottom: 8px;
 }
 .team-text {
   color: var(--text);
@@ -193,25 +268,41 @@ body {
 /* ===== ============ /TEAM ============ ===== */
 /* ===== ============ FOOTER ============ ===== */
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--dark-color);
 }
 .footer-logo-link {
+  display: block;
+  margin-bottom: 16px;
   color: var(--light-color);
 }
 .footer-text {
+  /* width: 264px; */
+  max-width: 264px;
   color: var(--light-color);
 }
 /* ===== ============ /FOOTER ============ ===== */
 /* ===== ============ PORTFOLIO ============ ===== */
 .portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-btn-item {
 }
 .portfolio-button {
-  font-weight: 600;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
+  font-weight: 500;
 
   background-color: var(--light-color);
   color: var(--primary-brand);
@@ -223,14 +314,26 @@ body {
   color: var(--white-color);
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-link {
+  display: block;
+  color: var(--dark-color);
 }
 .portfolio-img {
 }
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio-subtitle {
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: var(--text);
