@@ -207,6 +207,16 @@ body {
 }
 .advantage-item {
 }
+.advantage-icon-wrapper {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
 .advantage-subtitle {
   margin-bottom: 8px;
 }
@@ -264,6 +274,16 @@ body {
 }
 .team-text {
   color: var(--text);
+}
+.team-social-list {
+}
+.team-social-item {
+}
+.team-social-link {
+}
+.team-social-icon {
+  fill: aqua;
+  stroke: #4d5ae5;
 }
 /* ===== ============ /TEAM ============ ===== */
 /* ===== ============ FOOTER ============ ===== */
